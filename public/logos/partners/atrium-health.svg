@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="128" viewBox="0 0 470 128" role="img" aria-labelledby="title desc">
+  <title id="title">Atrium Health placeholder</title>
+  <desc id="desc">Prompt-compatible placeholder asset. Replace with approved official logo before publishing.</desc>
+  <rect width="470" height="128" fill="white"/>
+  <circle cx="55" cy="64" r="34" fill="#0f172a"/>
+  <path d="M55 37l23 40H32l23-40Z" fill="white" opacity="0.92"/>
+  <path d="M55 91L32 51h46L55 91Z" fill="white" opacity="0.5"/>
+  <text x="112" y="65" font-family="Inter, Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="-1.2" fill="#0f172a">Atrium Health</text>
+  <text x="114" y="91" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="#64748b">Large integrated health system</text>
+</svg>

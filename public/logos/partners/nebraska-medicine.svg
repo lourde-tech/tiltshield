@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-labelledby="title desc">
+  <title id="title">Nebraska Medicine placeholder</title>
+  <desc id="desc">Prompt-compatible placeholder asset. Replace with approved official logo before publishing.</desc>
+  <rect width="560" height="128" fill="white"/>
+  <rect x="20" y="30" width="68" height="68" rx="18" fill="#0f172a"/>
+  <path d="M39 47h12l19 30V47h11v52H69L50 69v30H39V47Z" fill="white" transform="scale(1 0.84) translate(0 9)"/>
+  <text x="112" y="61" font-family="Inter, Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="-1" fill="#0f172a">Nebraska Medicine</text>
+  <text x="114" y="88" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="#64748b">University of Nebraska Medical Center</text>
+</svg>

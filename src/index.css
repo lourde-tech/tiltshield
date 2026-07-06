@@ -1,0 +1,71 @@
+@import "@fontsource-variable/archivo";
+@import "@fontsource-variable/instrument-sans";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-navy font-sans text-slateText;
+  }
+  ::selection {
+    background: rgba(56, 189, 248, 0.35);
+  }
+  :focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Signature: safety-tape divider — a quiet nod to facility floor marking */
+  .hazard-divider {
+    height: 6px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(56, 189, 248, 0.55) 0 14px,
+      transparent 14px 28px
+    );
+    mask-image: linear-gradient(to right, transparent, black 18%, black 82%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 18%, black 82%, transparent);
+  }
+  .hazard-divider--red {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(220, 38, 38, 0.45) 0 14px,
+      transparent 14px 28px
+    );
+  }
+  .spec-label {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em];
+  }
+  .dark-grid-bg {
+    background-image:
+      linear-gradient(rgba(30, 41, 59, 0.45) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 41, 59, 0.45) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 30%, transparent 75%);
+  }
+}
