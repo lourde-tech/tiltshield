@@ -40,7 +40,7 @@ export function LogoCloud({ className, institutions, ...props }: LogoCloudProps)
                 target="_blank"
                 rel="noreferrer"
                 aria-label={inst.fullName}
-                title={`${inst.fullName} — ${inst.descriptor}`}
+                title={`${inst.fullName}, ${inst.descriptor}`}
                 className="group flex h-24 w-60 items-center justify-center overflow-hidden rounded-2xl border border-lightBorder/80 bg-white px-8 shadow-card transition duration-300 hover:-translate-y-0.5 hover:border-shield/25 hover:shadow-cardHover md:h-28 md:w-64"
                 style={inst.cardBackground ? { backgroundColor: inst.cardBackground } : undefined}
               >

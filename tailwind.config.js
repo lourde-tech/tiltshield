@@ -35,6 +35,10 @@ export default {
         card: "0 1px 2px rgba(7,17,31,0.04), 0 8px 24px -8px rgba(7,17,31,0.10)",
         cardHover: "0 2px 4px rgba(7,17,31,0.05), 0 16px 40px -12px rgba(7,17,31,0.16)",
         glowBlue: "0 0 0 1px rgba(56,189,248,0.25), 0 8px 40px -8px rgba(37,99,235,0.55)",
+        media: "0 2px 6px rgba(7,17,31,0.05), 0 28px 90px -20px rgba(7,17,31,0.35)",
+      },
+      borderRadius: {
+        media: "1.75rem", // 28px — large editorial media canvases
       },
       letterSpacing: {
         eyebrow: "0.22em",

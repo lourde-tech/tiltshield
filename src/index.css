@@ -39,6 +39,29 @@
 }
 
 @layer utilities {
+  /* Editorial display scale — Archivo at medium weights with tight tracking.
+     Use these instead of ad-hoc font-extrabold headline stacks. */
+  .display-xl {
+    @apply font-display font-semibold;
+    font-size: clamp(3rem, 6.4vw, 6.25rem);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+  }
+  .display-lg {
+    @apply font-display font-semibold;
+    font-size: clamp(2.4rem, 4.6vw, 4.4rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+  .display-md {
+    @apply font-display font-semibold;
+    font-size: clamp(1.8rem, 2.9vw, 2.8rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
   /* Signature: safety-tape divider — a quiet nod to facility floor marking */
   .hazard-divider {
     height: 6px;

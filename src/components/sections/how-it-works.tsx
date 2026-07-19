@@ -2,68 +2,73 @@ import { FadeUp, StaggerGrid, StaggerItem } from "@/components/motion";
 
 const STEPS = [
   {
-    step: "01",
+    number: "01",
     title: "Place over load",
-    copy: "Drop TiltShield over the top of the container — even overflowing loads.",
-    image: "/images/how-it-works/place-over-load.png",
-    alt: "TiltShield cover being placed over an overloaded container filled with rocks and debris",
+    copy: "Lower TiltShield over the container and align it with the opening.",
+    image: "/images/how-it-works/position.webp",
+    alt: "TiltShield positioned above a loaded tilt truck",
   },
   {
-    step: "02",
+    number: "02",
     title: "Stretch over container",
-    copy: "The universal stretch fit expands to cover the full opening.",
-    image: "/images/how-it-works/stretch-over-container.png",
-    alt: "TiltShield cover being stretched over a black container with visible tension",
+    copy: "Pull the flexible edge evenly around the container.",
+    image: "/images/how-it-works/stretch.webp",
+    alt: "TiltShield being stretched around the rim of a tilt truck",
   },
   {
-    step: "03",
+    number: "03",
     title: "Secure under rim",
-    copy: "The cover locks tightly under the rim and stays put during transport.",
-    image: "/images/how-it-works/secure-under-rim.png",
-    alt: "TiltShield cover fully secured under the rim of a black container",
+    copy: "Seat the flexible edge evenly around the rim before movement.",
+    image: "/images/how-it-works/secure.webp",
+    alt: "TiltShield secured around the rim of a tilt truck",
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-mist py-24 md:py-32">
+    <section id="how-it-works" className="bg-mist pb-14 pt-24 sm:pt-28 lg:pb-16 lg:pt-36">
       <div className="container">
-        <FadeUp className="mx-auto max-w-2xl text-center">
-          <p className="spec-label text-shield">How it works</p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Three moves. Ten seconds.
+        <FadeUp className="max-w-2xl">
+          <h2 className="display-lg text-navy">
+            Three moves.
+            <br />
+            Ten seconds.
           </h2>
         </FadeUp>
 
-        <StaggerGrid className="mt-16 grid gap-6 md:grid-cols-3">
-          {STEPS.map(({ step, title, copy, image, alt }) => (
-            <StaggerItem
-              key={step}
-              className="group rounded-3xl border border-lightBorder bg-white p-5 shadow-card transition-shadow duration-300 hover:shadow-cardHover"
-            >
-              <div className="relative mb-6 flex h-44 items-center justify-center overflow-hidden rounded-2xl border border-lightBorder bg-mist p-3 md:h-52">
+        <StaggerGrid className="mt-16 grid gap-16 md:grid-cols-3 md:gap-8 lg:mt-20">
+          {STEPS.map(({ number, title, copy, image, alt }) => (
+            <StaggerItem key={number} className="group border-t border-navy/15 pt-6">
+              <p
+                aria-hidden="true"
+                className="font-display text-[clamp(4rem,6vw,5.5rem)] font-medium leading-none tracking-[-0.05em] text-navy/10"
+              >
+                {number}
+              </p>
+
+              <div className="mt-5 aspect-[464/778] w-full overflow-hidden rounded-[18px] bg-[#edf0f3]">
                 <img
                   src={image}
                   alt={alt}
                   loading="lazy"
-                  className="h-full w-full object-contain transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.03]"
+                  width={464}
+                  height={778}
+                  className="h-full w-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:group-hover:scale-[1.015]"
                 />
-                <span className="spec-label absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-clinical text-[11px] font-bold text-white shadow-md">
-                  {step}
-                </span>
               </div>
 
-              <h3 className="text-center font-display text-lg font-bold text-navy">{title}</h3>
-              <p className="mx-auto mt-2.5 max-w-xs pb-3 text-center text-[15px] leading-relaxed text-slateSoft">
-                {copy}
-              </p>
+              <h3 className="mt-7 font-display text-2xl font-medium leading-tight tracking-[-0.035em] text-navy">
+                {title}
+              </h3>
+              <p className="mt-3 max-w-[32rem] text-base leading-7 text-slateSoft">{copy}</p>
             </StaggerItem>
           ))}
         </StaggerGrid>
 
-        <FadeUp delay={0.15} className="mt-12 text-center">
-          <p className="mx-auto inline-block rounded-full border border-lightBorder bg-white px-6 py-3 font-display text-[15px] font-semibold text-navy shadow-card">
-            Done in under 10 seconds. No training required. No lifting needed.
+        <FadeUp delay={0.15} className="mt-16 border-t border-navy/15 pt-10">
+          <p className="display-md max-w-3xl text-navy">
+            Done in under 10 seconds.{" "}
+            <span className="text-slateSoft">No training required. No lifting needed.</span>
           </p>
         </FadeUp>
       </div>

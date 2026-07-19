@@ -7,17 +7,24 @@ const COLORS = [
   { name: "Red", image: "/tiltshield/colors/red.png" },
 ];
 
+const SIZES = [
+  { name: "Medium", dims: "72.25 × 33.5 × 43.75 in" },
+  { name: "Large", dims: "80.5 × 43 × 49.5 in" },
+];
+
 export function ProductOptions() {
   return (
-    <section className="bg-mist py-24 md:py-32">
+    <section id="product" className="bg-mist py-24 md:py-32">
       <div className="container">
         <FadeUp className="mx-auto max-w-2xl text-center">
-          <p className="spec-label text-shield">Product options</p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Four colors. One perfect fit.
+          <h2 className="display-lg mx-auto text-navy">
+            Four colors. Two sizes.
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-slateSoft">
-            Designed to expand over any load and secure tightly to your tilt truck.
+            Available in medium and large, in the color that fits your
+            facility. Every cover is waterproof, durable, and easy to clean,
+            expands over even overflowing loads, and locks tightly to your
+            tilt truck.
           </p>
         </FadeUp>
 
@@ -34,14 +41,25 @@ export function ProductOptions() {
                 className="mx-auto h-44 w-auto object-contain transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105 md:h-48"
               />
               <h3 className="mt-5 font-display text-lg font-bold text-navy">{name}</h3>
-              <p className="spec-label mt-1 text-slateSoft">Universal stretch fit</p>
             </StaggerItem>
           ))}
         </StaggerGrid>
 
-        <FadeUp delay={0.15} className="mt-10 text-center">
-          <p className="spec-label inline-block rounded-full border border-lightBorder bg-white px-5 py-2.5 text-slateText">
-            Fits 1–2.5 yard tilt trucks
+        <FadeUp delay={0.15} className="mt-12">
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {SIZES.map(({ name, dims }) => (
+              <span
+                key={name}
+                className="inline-flex items-center gap-3 rounded-full border border-lightBorder bg-white px-5 py-2.5"
+              >
+                <span className="font-display text-sm font-bold text-navy">{name}</span>
+                <span className="spec-label text-slateSoft">{dims}</span>
+              </span>
+            ))}
+          </div>
+          <p className="mt-5 text-center text-sm text-slateSoft">
+            Every color is available in both sizes and fits 1 to 2.5 yard tilt
+            trucks.
           </p>
         </FadeUp>
       </div>

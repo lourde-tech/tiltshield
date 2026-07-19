@@ -1,6 +1,11 @@
-import { Phone, Mail, Globe, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/sections/logo";
+import {
+  ArrowRightSmall,
+  FacilityMailIcon,
+  FacilityPhoneIcon,
+  FacilityWebIcon,
+} from "@/components/ui/tiltshield-icons";
 
 const NAV = [
   { label: "Product", href: "/#product" },
@@ -41,17 +46,17 @@ export function Footer() {
           <ul className="mt-5 space-y-3 text-sm">
             <li>
               <a href="tel:+18339876455" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
-                <Phone className="h-4 w-4 text-cyan" aria-hidden="true" /> (833) 987-6455
+                <FacilityPhoneIcon className="h-4 w-4 text-cyan" /> (833) 987-6455
               </a>
             </li>
             <li>
               <a href="mailto:info@tiltshield.com" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
-                <Mail className="h-4 w-4 text-cyan" aria-hidden="true" /> info@tiltshield.com
+                <FacilityMailIcon className="h-4 w-4 text-cyan" /> info@tiltshield.com
               </a>
             </li>
             <li>
               <a href="https://www.tiltshieldusa.com" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
-                <Globe className="h-4 w-4 text-cyan" aria-hidden="true" /> www.tiltshieldusa.com
+                <FacilityWebIcon className="h-4 w-4 text-cyan" /> www.tiltshieldusa.com
               </a>
             </li>
           </ul>
@@ -60,11 +65,11 @@ export function Footer() {
         <div>
           <h3 className="spec-label text-slateSoft">Ready when you are</h3>
           <p className="mt-5 text-sm leading-relaxed text-slateSoft">
-            Get facility-specific pricing in one business day.
+            Get pricing for your facility in one business day.
           </p>
           <Button asChild className="mt-5">
             <a href="/#contact">
-              Get Pricing Now <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              Request Pricing <ArrowRightSmall className="h-4 w-4" />
             </a>
           </Button>
         </div>

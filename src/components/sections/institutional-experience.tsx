@@ -59,19 +59,13 @@ const INSTITUTIONS: Institution[] = [
 export function InstitutionalExperience() {
   return (
     <section id="experience" className="relative overflow-hidden bg-white py-24 md:py-32">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.10),rgba(214,168,79,0.05),transparent_65%)] blur-3xl"
-      />
       <div className="container relative">
         <FadeUp className="mx-auto max-w-3xl text-center">
-          <p className="spec-label text-shield">Healthcare systems</p>
-          <h2 className="mt-4 text-balance font-display text-3xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Trusted by teams across leading medical networks
+          <h2 className="display-lg mx-auto text-navy">
+            Institutional Experience
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slateSoft md:text-lg">
-            TiltShield supports cleaner, more contained, and more efficient
-            load coverage for demanding facilities environments.
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slateSoft md:text-lg">
+            Healthcare environments that shaped the problem behind TiltShield.
           </p>
         </FadeUp>
 

@@ -82,10 +82,6 @@ export function Logo({ className, light = true }: { className?: string; light?: 
           </text>
         </g>
       </svg>
-
-      <span className="spec-label text-[9px] tracking-[0.28em] text-slateSoft">
-        Cover · Secure · Comply
-      </span>
     </a>
   );
 }
