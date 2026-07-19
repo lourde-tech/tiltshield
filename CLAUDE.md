@@ -85,6 +85,9 @@ legally safe framing per the partner slider pack's compliance notes:
 
 - Contact: (833) 987-6455 · info@tiltshield.com · www.tiltshieldusa.com
 - Fit claim: 1–2.5 yard tilt trucks
+- Sizes: two — Medium (72.25 × 33.5 × 43.75 in) and Large (80.5 × 43 × 49.5 in);
+  each color is available in both sizes. Do NOT describe the cover as "one size"
+  or "universal" — it comes in two sizes (per the boss's pricing sheet)
 - Time claims: "under 10 seconds", "cuts waste-handling time by up to 30%"
   (from the source flyer — don't escalate these numbers)
 - Tagline: "Cover. Secure. Comply."
