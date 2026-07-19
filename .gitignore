@@ -30,3 +30,6 @@ dist-ssr
 
 # Local agent/dev tooling
 .claude/
+
+# Heavy raw video source — production outputs live alongside it
+assets-src/tiltshield-hero-source.mp4
