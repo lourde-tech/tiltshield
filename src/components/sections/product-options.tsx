@@ -1,10 +1,10 @@
 import { FadeUp, StaggerGrid, StaggerItem } from "@/components/motion";
 
 const COLORS = [
-  { name: "Gray", image: "/tiltshield/colors/gray.png" },
-  { name: "Black", image: "/tiltshield/colors/black.png" },
-  { name: "Blue", image: "/tiltshield/colors/blue.png" },
-  { name: "Red", image: "/tiltshield/colors/red.png" },
+  { name: "Gray", image: "/images/tiltshield/color-gray.png" },
+  { name: "Black", image: "/images/tiltshield/color-black.png" },
+  { name: "Blue", image: "/images/tiltshield/color-blue.png" },
+  { name: "Red", image: "/images/tiltshield/color-red.png" },
 ];
 
 const SIZES = [

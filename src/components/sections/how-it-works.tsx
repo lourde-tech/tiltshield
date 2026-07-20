@@ -5,21 +5,21 @@ const STEPS = [
     number: "01",
     title: "Place over load",
     copy: "Lower TiltShield over the container and align it with the opening.",
-    image: "/images/how-it-works/position.webp",
+    image: "/images/tiltshield/step-place-over-load.png",
     alt: "TiltShield positioned above a loaded tilt truck",
   },
   {
     number: "02",
     title: "Stretch over container",
     copy: "Pull the flexible edge evenly around the container.",
-    image: "/images/how-it-works/stretch.webp",
+    image: "/images/tiltshield/step-stretch-over-container.png",
     alt: "TiltShield being stretched around the rim of a tilt truck",
   },
   {
     number: "03",
     title: "Secure under rim",
     copy: "Seat the flexible edge evenly around the rim before movement.",
-    image: "/images/how-it-works/secure.webp",
+    image: "/images/tiltshield/step-secure-under-rim.png",
     alt: "TiltShield secured around the rim of a tilt truck",
   },
 ];
@@ -46,13 +46,13 @@ export function HowItWorks() {
                 {number}
               </p>
 
-              <div className="mt-5 aspect-[464/778] w-full overflow-hidden rounded-[18px] bg-[#edf0f3]">
+              <div className="mt-5 aspect-[3/5] w-full overflow-hidden rounded-[18px] bg-[#edf0f3]">
                 <img
                   src={image}
                   alt={alt}
                   loading="lazy"
-                  width={464}
-                  height={778}
+                  width={971}
+                  height={1619}
                   className="h-full w-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:group-hover:scale-[1.015]"
                 />
               </div>
