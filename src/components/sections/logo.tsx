@@ -13,11 +13,11 @@ export function Logo({ className }: { className?: string }) {
       aria-label="TiltShield home"
     >
       <img
-        src="/tiltshield-logo.png"
+        src="/tiltshield-logo-transparent.png"
         alt="TiltShield"
-        width={1600}
-        height={640}
-        className="h-12 w-auto object-contain md:h-14"
+        width={826}
+        height={292}
+        className="h-10 w-auto object-contain md:h-11"
       />
     </a>
   );
