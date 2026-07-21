@@ -11,7 +11,6 @@ const NAV = [
   { label: "Product", href: "/#product" },
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Benefits", href: "/#benefits" },
-  { label: "Experience", href: "/#experience" },
   { label: "Industries", href: "/#industries" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -45,8 +44,8 @@ export function Footer() {
           <h3 className="spec-label text-slateSoft">Contact</h3>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <a href="tel:+18339876455" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
-                <FacilityPhoneIcon className="h-4 w-4 text-cyan" /> (833) 987-6455
+              <a href="tel:+18007659008" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
+                <FacilityPhoneIcon className="h-4 w-4 text-cyan" /> (800) 765-9008
               </a>
             </li>
             <li>

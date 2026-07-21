@@ -111,8 +111,8 @@ export function LegalContactBlock() {
       </p>
       <p>
         <strong className="font-semibold text-navy">Phone:</strong>{" "}
-        <a href="tel:+18339876455" className="text-clinical underline-offset-2 hover:underline">
-          (833) 987-6455
+        <a href="tel:+18007659008" className="text-clinical underline-offset-2 hover:underline">
+          (800) 765-9008
         </a>
       </p>
     </div>

@@ -6,7 +6,6 @@ import { Savings } from "@/components/sections/savings";
 import { BeforeAfter } from "@/components/sections/before-after";
 import { ProductOptions } from "@/components/sections/product-options";
 import { CostAdvantage } from "@/components/sections/cost-advantage";
-import { InstitutionalExperience } from "@/components/sections/institutional-experience";
 import { Industries } from "@/components/sections/industries";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Contact } from "@/components/sections/contact";
@@ -50,7 +49,6 @@ export default function App() {
         <BeforeAfter />
         <ProductOptions />
         <CostAdvantage />
-        <InstitutionalExperience />
         <Industries />
         <FinalCta />
         <Contact />

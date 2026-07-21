@@ -45,7 +45,7 @@ export function Contact() {
 
           <ul className="mt-10 space-y-5">
             {[
-              { label: "(833) 987-6455", href: "tel:+18339876455", Icon: FacilityPhoneIcon },
+              { label: "(800) 765-9008", href: "tel:+18007659008", Icon: FacilityPhoneIcon },
               { label: "info@tiltshield.com", href: "mailto:info@tiltshield.com", Icon: FacilityMailIcon },
               { label: "www.tiltshieldusa.com", href: "https://www.tiltshieldusa.com", Icon: FacilityWebIcon },
             ].map(({ label, href, Icon }) => (
