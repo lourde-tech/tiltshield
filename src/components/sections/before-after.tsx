@@ -49,7 +49,7 @@ export function BeforeAfter() {
               <ul className="mt-7 space-y-4">
                 {WITHOUT.map(({ label, Icon }) => (
                   <li key={label} className="flex items-center gap-3 text-[16px] text-coolGray/70">
-                    <Icon className="h-5 w-5 shrink-0 text-slateSoft" />
+                    <Icon className="h-5 w-5 shrink-0 text-warning" />
                     {label}
                   </li>
                 ))}
