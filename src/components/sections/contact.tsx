@@ -25,7 +25,7 @@ const selectClass =
 // FormSubmit delivers submissions to this inbox with no backend of our own.
 // The first live submission triggers a one-time activation email to this
 // address that must be confirmed before delivery begins.
-const FORM_ENDPOINT = "https://formsubmit.co/ajax/info@tiltshield.com";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/info@tiltshieldusa.com";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -75,7 +75,7 @@ export function Contact() {
           <ul className="mt-10 space-y-5">
             {[
               { label: "(800) 765-9008", href: "tel:+18007659008", Icon: FacilityPhoneIcon },
-              { label: "info@tiltshield.com", href: "mailto:info@tiltshield.com", Icon: FacilityMailIcon },
+              { label: "info@tiltshieldusa.com", href: "mailto:info@tiltshieldusa.com", Icon: FacilityMailIcon },
               { label: "www.tiltshieldusa.com", href: "https://www.tiltshieldusa.com", Icon: FacilityWebIcon },
             ].map(({ label, href, Icon }) => (
               <li key={label}>
@@ -163,8 +163,8 @@ export function Contact() {
                     <p role="alert" className="text-sm text-warning">
                       Something went wrong sending your request. Please try again, or
                       email us directly at{" "}
-                      <a href="mailto:info@tiltshield.com" className="underline underline-offset-2">
-                        info@tiltshield.com
+                      <a href="mailto:info@tiltshieldusa.com" className="underline underline-offset-2">
+                        info@tiltshieldusa.com
                       </a>
                       .
                     </p>

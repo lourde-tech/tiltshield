@@ -49,8 +49,8 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:info@tiltshield.com" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
-                <FacilityMailIcon className="h-4 w-4 text-cyan" /> info@tiltshield.com
+              <a href="mailto:info@tiltshieldusa.com" className="flex items-center gap-2.5 text-coolGray/80 transition-colors hover:text-cyan">
+                <FacilityMailIcon className="h-4 w-4 text-cyan" /> info@tiltshieldusa.com
               </a>
             </li>
             <li>

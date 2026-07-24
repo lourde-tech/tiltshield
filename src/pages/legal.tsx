@@ -105,8 +105,8 @@ export function LegalContactBlock() {
       </p>
       <p>
         <strong className="font-semibold text-navy">Email:</strong>{" "}
-        <a href="mailto:info@tiltshield.com" className="text-clinical underline-offset-2 hover:underline">
-          info@tiltshield.com
+        <a href="mailto:info@tiltshieldusa.com" className="text-clinical underline-offset-2 hover:underline">
+          info@tiltshieldusa.com
         </a>
       </p>
       <p>

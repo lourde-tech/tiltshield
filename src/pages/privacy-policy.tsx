@@ -226,8 +226,8 @@ export function PrivacyPolicyPage() {
         <LegalP>To make a privacy-related request, contact us at:</LegalP>
         <LegalP>
           <strong className="font-semibold text-navy">Email:</strong>{" "}
-          <a href="mailto:info@tiltshield.com" className="text-clinical underline-offset-2 hover:underline">
-            info@tiltshield.com
+          <a href="mailto:info@tiltshieldusa.com" className="text-clinical underline-offset-2 hover:underline">
+            info@tiltshieldusa.com
           </a>
           <br />
           <strong className="font-semibold text-navy">Phone:</strong>{" "}
@@ -252,8 +252,8 @@ export function PrivacyPolicyPage() {
         <LegalP>
           Because privacy laws may apply differently depending on business size, data practices,
           and other factors, California residents may contact us at{" "}
-          <a href="mailto:info@tiltshield.com" className="text-clinical underline-offset-2 hover:underline">
-            info@tiltshield.com
+          <a href="mailto:info@tiltshieldusa.com" className="text-clinical underline-offset-2 hover:underline">
+            info@tiltshieldusa.com
           </a>{" "}
           with any privacy-related request or question.
         </LegalP>
