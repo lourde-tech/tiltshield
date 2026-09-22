@@ -86,7 +86,7 @@ collapses everything (handled in motion.tsx + index.css).
   **Never** "Trusted by", "partners", "customers", "used by", "approved by".
 - Disclaimer paragraph under the logo slider must stay.
 - Verified claims only: under 10 seconds, up to 30%, 1–2.5 yd fit, two sizes
-  (Medium 72.25×33.5×43.75 in, Large 80.5×43×49.5 in).
+  (Standard 72.25×33.5×43.75 in, Large 80.5×43×49.5 in).
 - CTA label is "Request Pricing" everywhere; destination `#contact`.
 
 ## Final visual system (July 2026 directive)

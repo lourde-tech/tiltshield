@@ -39,8 +39,18 @@ export function Hero() {
           <motion.p
             initial={reduce ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease, delay: 0.24 }}
+            transition={{ duration: 0.7, ease, delay: 0.2 }}
             className="mt-6 max-w-[33rem] text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.55] text-white/[0.68]"
+          >
+            Tested in 2 hospitals during daily operations. Reviewed for
+            compliance by hospital Infection Control leadership.
+          </motion.p>
+
+          <motion.p
+            initial={reduce ? false : { opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease, delay: 0.28 }}
+            className="mt-3 max-w-[33rem] text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.55] text-white/[0.68]"
           >
             TiltShield is a reusable cover that stretches over tilt trucks and
             moves with modern institutional operations.

@@ -8,7 +8,7 @@ const COLORS = [
 ];
 
 const SIZES = [
-  { name: "Medium", dims: "72.25 × 33.5 × 43.75 in" },
+  { name: "Standard", dims: "72.25 × 33.5 × 43.75 in" },
   { name: "Large", dims: "80.5 × 43 × 49.5 in" },
 ];
 
@@ -21,7 +21,11 @@ export function ProductOptions() {
             Four colors. Two sizes.
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-slateSoft">
-            Available in medium and large, in the color that fits your
+            Reusable and easy to clean. Wipes clean with standard hospital
+            disinfectants. No heavy lids to lift, store, or replace.
+          </p>
+          <p className="mt-3 text-lg leading-relaxed text-slateSoft">
+            Available in standard and large, in the color that fits your
             facility. Every cover is waterproof, durable, and easy to clean,
             expands over even overflowing loads, and locks tightly to your
             tilt truck.

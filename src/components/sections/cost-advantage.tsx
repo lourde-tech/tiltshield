@@ -8,7 +8,7 @@ const ease = [0.32, 0.72, 0, 1] as const;
 type TiltShieldSize = "medium" | "large";
 
 const PRICING = {
-  medium: { label: "Medium", price: 24.99 },
+  medium: { label: "Standard", price: 24.99 },
   large: { label: "Large", price: 49.98 },
 } satisfies Record<TiltShieldSize, { label: string; price: number }>;
 
@@ -99,7 +99,11 @@ export function CostAdvantage() {
             <br />
             <span className="text-cyan">Not the cost.</span>
           </h2>
-          <Button asChild size="lg" className="mt-10">
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-slateSoft">
+            Start with a single cover: $29.99 Standard / $49.99 Large, or save
+            $5 per unit with a case of 12. Volume pricing available for fleets.
+          </p>
+          <Button asChild size="lg" className="mt-8">
             <a href="#contact">Request Volume Pricing</a>
           </Button>
         </FadeUp>
