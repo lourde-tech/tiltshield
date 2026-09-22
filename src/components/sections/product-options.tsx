@@ -26,9 +26,8 @@ export function ProductOptions() {
           </p>
           <p className="mt-3 text-lg leading-relaxed text-slateSoft">
             Available in standard and large, in the color that fits your
-            facility. Every cover is waterproof, durable, and easy to clean,
-            expands over even overflowing loads, and locks tightly to your
-            tilt truck.
+            facility. Every cover is waterproof and durable, expands over even
+            overflowing loads, and locks tightly to your tilt truck.
           </p>
         </FadeUp>
 

@@ -7,10 +7,12 @@ const ease = [0.32, 0.72, 0, 1] as const;
 
 type TiltShieldSize = "medium" | "large";
 
+// Single-cover prices drive every comparison figure; case pricing is shown
+// separately and never used in the savings math.
 const PRICING = {
-  medium: { label: "Standard", price: 24.99 },
-  large: { label: "Large", price: 49.98 },
-} satisfies Record<TiltShieldSize, { label: string; price: number }>;
+  medium: { label: "Standard", price: 29.99, casePrice: 24.99 },
+  large: { label: "Large", price: 49.99, casePrice: 44.99 },
+} satisfies Record<TiltShieldSize, { label: string; price: number; casePrice: number }>;
 
 const RIGID_LID_LOW = 199;
 const RIGID_LID_HIGH = 299;
@@ -63,7 +65,7 @@ export function CostAdvantage() {
     large: null,
   });
 
-  const price = PRICING[size].price;
+  const { price, casePrice } = PRICING[size];
   const savingsLow = RIGID_LID_LOW - price;
   const savingsHigh = RIGID_LID_HIGH - price;
   const reduction = (1 - price / RIGID_LID_HIGH) * 100;
@@ -190,6 +192,15 @@ export function CostAdvantage() {
                     transition={reduce ? { duration: 0 } : { duration: 0.45, ease }}
                     className="h-full rounded-full bg-compliance"
                   />
+                </div>
+                <div className="mt-5 flex items-baseline justify-between gap-6 border-t border-graphite/60 pt-4">
+                  <p className="text-[15px] text-coolGray/70">Case of 12</p>
+                  <SwapValue
+                    swapKey={size}
+                    className="inline-block font-display text-lg font-semibold tracking-tight text-compliance/85"
+                  >
+                    {usd.format(casePrice)} per cover
+                  </SwapValue>
                 </div>
               </div>
 
