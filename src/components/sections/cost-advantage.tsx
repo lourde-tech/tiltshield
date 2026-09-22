@@ -69,8 +69,10 @@ export function CostAdvantage() {
   const savingsLow = RIGID_LID_LOW - price;
   const savingsHigh = RIGID_LID_HIGH - price;
   const reduction = (1 - price / RIGID_LID_HIGH) * 100;
-  const trucksLow = Math.round(RIGID_LID_LOW / price);
-  const trucksHigh = Math.round(RIGID_LID_HIGH / price);
+  // Complete covers each budget can actually buy — never round up
+  // (at $29.99, $199 buys 6 covers; a 7th would cost $209.93).
+  const trucksLow = Math.floor(RIGID_LID_LOW / price);
+  const trucksHigh = Math.floor(RIGID_LID_HIGH / price);
   const barPct = (price / RIGID_LID_HIGH) * 100;
 
   const METRICS = [

@@ -20,7 +20,7 @@ const FACILITY_TYPES = [
 ];
 
 const selectClass =
-  "flex h-12 w-full appearance-none rounded-xl border border-graphite bg-white/[0.04] px-4 text-[15px] text-white transition-colors focus:border-cyan/60 focus:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/40 [&>option]:bg-panel";
+  "field-control flex h-12 w-full appearance-none rounded-xl border border-graphite bg-white/[0.04] px-4 text-white transition-colors focus:border-cyan/60 focus:bg-panel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/40 invalid:text-slateSoft [&>option]:bg-panel [&>option]:text-white";
 
 // FormSubmit delivers submissions to this inbox with no backend of our own.
 // The first live submission triggers a one-time activation email to this
@@ -116,27 +116,27 @@ export function Contact() {
                   />
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="name" className="spec-label mb-2 block text-slateSoft">Name</label>
+                      <label htmlFor="name" className="field-label text-slateSoft">Name</label>
                       <Input id="name" name="name" autoComplete="name" required placeholder="Jordan Reyes" />
                     </div>
                     <div>
-                      <label htmlFor="company" className="spec-label mb-2 block text-slateSoft">Company</label>
+                      <label htmlFor="company" className="field-label text-slateSoft">Company</label>
                       <Input id="company" name="company" autoComplete="organization" required placeholder="Facility name" />
                     </div>
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="email" className="spec-label mb-2 block text-slateSoft">Email</label>
+                      <label htmlFor="email" className="field-label text-slateSoft">Email</label>
                       <Input id="email" name="email" type="email" autoComplete="email" required placeholder="you@company.com" />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="spec-label mb-2 block text-slateSoft">Phone</label>
+                      <label htmlFor="phone" className="field-label text-slateSoft">Phone</label>
                       <Input id="phone" name="phone" type="tel" autoComplete="tel" placeholder="(555) 000-0000" />
                     </div>
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="facility-type" className="spec-label mb-2 block text-slateSoft">Facility type</label>
+                      <label htmlFor="facility-type" className="field-label text-slateSoft">Facility type</label>
                       <select id="facility-type" name="facilityType" required defaultValue="" className={selectClass}>
                         <option value="" disabled>Select facility type</option>
                         {FACILITY_TYPES.map((t) => (
@@ -145,18 +145,18 @@ export function Contact() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="trucks" className="spec-label mb-2 block text-slateSoft">Number of tilt trucks</label>
+                      <label htmlFor="trucks" className="field-label text-slateSoft">Number of tilt trucks</label>
                       <Input id="trucks" name="tiltTrucks" type="number" min={1} inputMode="numeric" placeholder="e.g. 12" />
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="message" className="spec-label mb-2 block text-slateSoft">Message</label>
+                    <label htmlFor="message" className="field-label text-slateSoft">Message</label>
                     <textarea
                       id="message"
                       name="message"
                       rows={4}
                       placeholder="Anything we should know about your waste handling setup?"
-                      className="flex w-full rounded-xl border border-graphite bg-white/[0.04] px-4 py-3 text-[15px] text-white placeholder:text-slateSoft transition-colors focus:border-cyan/60 focus:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/40"
+                      className="field-control flex w-full rounded-xl border border-graphite bg-white/[0.04] px-4 py-3 text-white transition-colors focus:border-cyan/60 focus:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/40"
                     />
                   </div>
                   {status === "error" && (

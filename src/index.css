@@ -83,6 +83,23 @@
   .spec-label {
     @apply font-mono text-[11px] uppercase tracking-[0.18em];
   }
+  /* Primary-sans text roles for footer, form, and badges. Normal tracking,
+     sentence case — never the mono spec-label treatment in these areas. */
+  .footer-heading {
+    @apply font-sans text-sm font-semibold leading-6 tracking-normal;
+  }
+  .footer-text {
+    @apply font-sans text-sm leading-6 tracking-normal;
+  }
+  .footer-legal {
+    @apply font-sans text-[13px] leading-5 tracking-normal text-slateSoft;
+  }
+  .field-label {
+    @apply mb-2 block font-sans text-sm font-medium leading-5 tracking-normal;
+  }
+  .field-control {
+    @apply font-sans text-[15px] tracking-normal placeholder:text-slateSoft;
+  }
   .dark-grid-bg {
     background-image:
       linear-gradient(rgba(30, 41, 59, 0.45) 1px, transparent 1px),

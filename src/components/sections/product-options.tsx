@@ -49,18 +49,18 @@ export function ProductOptions() {
         </StaggerGrid>
 
         <FadeUp delay={0.15} className="mt-12">
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             {SIZES.map(({ name, dims }) => (
               <span
                 key={name}
-                className="inline-flex items-center gap-3 rounded-full border border-lightBorder bg-white px-5 py-2.5"
+                className="inline-flex items-baseline gap-2.5 whitespace-nowrap rounded-full border border-lightBorder bg-white px-5 py-3 font-sans text-[15px] leading-6 tracking-normal"
               >
-                <span className="font-display text-sm font-bold text-navy">{name}</span>
-                <span className="spec-label text-slateSoft">{dims}</span>
+                <span className="font-semibold text-navy">{name}</span>
+                <span className="font-normal text-slateSoft">{dims}</span>
               </span>
             ))}
           </div>
-          <p className="mt-5 text-center text-sm text-slateSoft">
+          <p className="mt-5 text-center text-base leading-7 text-slateSoft">
             Every color is available in both sizes and fits 1 to 2.5 yard tilt
             trucks.
           </p>
