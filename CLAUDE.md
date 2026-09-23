@@ -91,9 +91,12 @@ legally safe framing per the partner slider pack's compliance notes:
   describe the cover as "one size" or "universal"
 - Single-cover pricing: $29.99 Standard / $49.99 Large; save $5 per unit with a
   case of 12; volume pricing for fleets
-- Approved proof line (hero): "Tested in 2 hospitals during daily operations.
+- Approved proof line (hero): "Tested in multiple hospitals during daily operations.
   Reviewed for compliance by hospital Infection Control leadership." Use only this
-  exact wording; never name the hospitals or escalate the claim
+  exact wording; never name the hospitals or escalate the claim. The client asked
+  not to state the count ("2 feels so small"); the real number is two, so never
+  imply more than that (no "dozens", "many", or "hospital systems" unless the
+  two sites are confirmed to belong to different systems)
 - Time claims: "under 10 seconds", "cuts waste-handling time by up to 30%"
   (from the source flyer — don't escalate these numbers)
 - Tagline: "Cover. Secure. Comply."

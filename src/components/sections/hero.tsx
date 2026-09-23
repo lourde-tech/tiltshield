@@ -42,7 +42,7 @@ export function Hero() {
             transition={{ duration: 0.7, ease, delay: 0.2 }}
             className="mt-6 max-w-[33rem] text-[clamp(1rem,1.3vw,1.2rem)] leading-[1.55] text-white/[0.68]"
           >
-            Tested in 2 hospitals during daily operations. Reviewed for
+            Tested in multiple hospitals during daily operations. Reviewed for
             compliance by hospital Infection Control leadership.
           </motion.p>
 
