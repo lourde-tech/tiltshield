@@ -67,6 +67,10 @@ legally safe framing per the partner slider pack's compliance notes:
 - `public/tiltshield/tiltshield-product.jpg` — cropped from the reference
   flyer; replace with a high-res product render at the same path (used in
   Hero and Solution sections, marked with REPLACE-ME comments)
+- `public/images/tiltshield/{color,step}-*.png` — sources for the Product and
+  How It Works images. They're served as AVIF/WebP variants via
+  `src/components/ui/responsive-image.tsx`; after replacing a PNG, run
+  `node scripts/optimize-images.mjs` to regenerate the variants and blur placeholders
 - `public/tiltshield/tiltshield-flyer-reference.jpg` — internal reference
   only; never render it on the page
 - Wordmark is code-rendered in `src/components/sections/logo.tsx`; swap for

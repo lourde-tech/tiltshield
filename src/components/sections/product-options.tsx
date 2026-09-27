@@ -1,10 +1,11 @@
 import { FadeUp, StaggerGrid, StaggerItem } from "@/components/motion";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 
 const COLORS = [
-  { name: "Gray", image: "/images/tiltshield/color-gray.png" },
-  { name: "Black", image: "/images/tiltshield/color-black.png" },
-  { name: "Blue", image: "/images/tiltshield/color-blue.png" },
-  { name: "Red", image: "/images/tiltshield/color-red.png" },
+  { name: "Gray", image: "color-gray" },
+  { name: "Black", image: "color-black" },
+  { name: "Blue", image: "color-blue" },
+  { name: "Red", image: "color-red" },
 ];
 
 const SIZES = [
@@ -37,11 +38,15 @@ export function ProductOptions() {
               key={name}
               className="group rounded-2xl border border-lightBorder bg-white p-6 text-center shadow-card transition-shadow duration-300 hover:shadow-cardHover"
             >
-              <img
-                src={image}
+              <ResponsiveImage
+                name={image}
+                widths={[256, 384, 640]}
+                sizes="(min-width: 768px) 192px, 176px"
+                width={1254}
+                height={1254}
                 alt={`${name} TiltShield cover secured on a tilt truck`}
-                loading="lazy"
-                className="mx-auto h-44 w-auto object-contain transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105 md:h-48"
+                frameClassName="mx-auto aspect-square h-44 max-w-full bg-contain md:h-48"
+                className="h-full w-full object-contain ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105"
               />
               <h3 className="mt-5 font-display text-lg font-bold text-navy">{name}</h3>
             </StaggerItem>
