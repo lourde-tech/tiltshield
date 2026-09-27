@@ -1,25 +1,26 @@
 import { FadeUp, StaggerGrid, StaggerItem } from "@/components/motion";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 
 const STEPS = [
   {
     number: "01",
     title: "Place over load",
     copy: "Lower TiltShield over the container and align it with the opening.",
-    image: "/images/tiltshield/step-place-over-load.png",
+    image: "step-place-over-load",
     alt: "TiltShield positioned above a loaded tilt truck",
   },
   {
     number: "02",
     title: "Stretch over container",
     copy: "Pull the flexible edge evenly around the container.",
-    image: "/images/tiltshield/step-stretch-over-container.png",
+    image: "step-stretch-over-container",
     alt: "TiltShield being stretched around the rim of a tilt truck",
   },
   {
     number: "03",
     title: "Secure under rim",
     copy: "Seat the flexible edge evenly around the rim before movement.",
-    image: "/images/tiltshield/step-secure-under-rim.png",
+    image: "step-secure-under-rim",
     alt: "TiltShield secured around the rim of a tilt truck",
   },
 ];
@@ -46,16 +47,16 @@ export function HowItWorks() {
                 {number}
               </p>
 
-              <div className="mt-5 aspect-[3/5] w-full overflow-hidden rounded-[18px] bg-[#edf0f3]">
-                <img
-                  src={image}
-                  alt={alt}
-                  loading="lazy"
-                  width={971}
-                  height={1619}
-                  className="h-full w-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:group-hover:scale-[1.015]"
-                />
-              </div>
+              <ResponsiveImage
+                name={image}
+                widths={[480, 720, 971]}
+                sizes="(min-width: 768px) 33vw, 100vw"
+                width={971}
+                height={1619}
+                alt={alt}
+                frameClassName="mt-5 aspect-[3/5] w-full overflow-hidden rounded-[18px] bg-[#edf0f3]"
+                className="h-full w-full object-cover object-center duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:group-hover:scale-[1.015]"
+              />
 
               <h3 className="mt-7 font-display text-2xl font-medium leading-tight tracking-[-0.035em] text-navy">
                 {title}
