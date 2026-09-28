@@ -102,5 +102,11 @@ legally safe framing per the partner slider pack's compliance notes:
   imply more than that (no "dozens", "many", or "hospital systems" unless the
   two sites are confirmed to belong to different systems)
 - Time claims: "under 10 seconds", "cuts waste-handling time by up to 30%"
+- ## Deploying
+
+The live site (tiltshieldusa.com) deploys from `main` via Vercel. When work on
+the site is finished and `npm run build` passes, open a PR and merge it into
+`main` so the update goes live — no separate confirmation needed. Report the
+merge and whether the deploy succeeded.
   (from the source flyer — don't escalate these numbers)
 - Tagline: "Cover. Secure. Comply."
