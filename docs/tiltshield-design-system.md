@@ -14,7 +14,6 @@ stretch-fit **cover**, not the tilt truck.
 |---|---|---|---|
 | Display | Archivo Variable | `@fontsource-variable/archivo` (OFL, self-hosted) | Approximate match — modern grotesk in the Aeonik class; kept over adding Inter Tight because it is already licensed, loaded, and closer to the brand's industrial voice |
 | Body / UI | Instrument Sans Variable | `@fontsource-variable/instrument-sans` | Approximate match |
-| Spec labels | IBM Plex Mono 400/500 | `@fontsource/ibm-plex-mono` | Site signature, not from references |
 
 The editorial character comes from **weight + tracking**, not family:
 display headlines moved from `font-extrabold` (800) to `font-semibold` (600)
@@ -25,7 +24,7 @@ with tracking −0.03em to −0.045em and sub-1.0 line-height at display sizes.
 - `.display-xl` — clamp(3rem, 6.4vw, 6.25rem), lh 0.94, tracking −0.045em. Hero only.
 - `.display-lg` — clamp(2.4rem, 4.6vw, 4.4rem), lh 0.98, tracking −0.04em. Section headlines.
 - `.display-md` — clamp(1.8rem, 2.9vw, 2.8rem), lh 1.04, tracking −0.03em. Statements/sub-sections.
-- `.spec-label` — IBM Plex Mono 11px uppercase 0.18em. Eyebrows, indices, apparatus.
+- Labels/eyebrows — `font-display font-semibold tracking-tight`, sentence case (no mono or uppercase tracking).
 
 All display classes use `text-wrap: balance`.
 

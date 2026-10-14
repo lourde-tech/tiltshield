@@ -35,10 +35,11 @@ npm run preview    # preview production build
 - Red (`warning`) is used ONLY in problem/risk contexts; green (`compliance`)
   only for savings/success
 - Fonts (self-hosted via @fontsource): Archivo Variable = `font-display`
-  (headings, buttons), Instrument Sans Variable = `font-sans` (body),
-  IBM Plex Mono = `font-mono` (spec labels via `.spec-label` utility)
+  (headings, buttons, labels), Instrument Sans Variable = `font-sans` (body).
+  No monospace or all-caps letter-spaced labels: small labels/eyebrows use
+  `font-display font-semibold tracking-tight` in sentence case
 - Signature elements in `src/index.css`: `.hazard-divider` (safety-tape stripe),
-  `.spec-label`, `.dark-grid-bg`. Reuse these; don't invent parallel utilities
+  `.dark-grid-bg`. Reuse these; don't invent parallel utilities
 - Tone: industrial but premium, compliance-focused, no playful copy, no clutter
 - Motion: restrained; respect `prefers-reduced-motion` (already handled in
   motion.tsx and index.css — keep it that way)

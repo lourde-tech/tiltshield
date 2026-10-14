@@ -29,7 +29,6 @@ export default {
       fontFamily: {
         display: ['"Archivo Variable"', "Archivo", "system-ui", "sans-serif"],
         sans: ['"Instrument Sans Variable"', '"Instrument Sans"', "system-ui", "sans-serif"],
-        mono: ['"IBM Plex Mono"', "ui-monospace", "SFMono-Regular", "monospace"],
       },
       boxShadow: {
         card: "0 1px 2px rgba(7,17,31,0.04), 0 8px 24px -8px rgba(7,17,31,0.10)",
