@@ -93,8 +93,9 @@ legally safe framing per the partner slider pack's compliance notes:
   each color is available in both sizes. Never call the smaller size "Medium"
   in customer-facing copy (renamed per the September 2026 copy handoff). Do NOT
   describe the cover as "one size" or "universal"
-- Single-cover pricing: $29.99 Standard / $49.99 Large; save $5 per unit with a
-  case of 12; volume pricing for fleets
+- Single-cover pricing: $39.99 Standard / $49.99 Large; save $5 per unit with a
+  case of 12 ($419.88 Standard / $539.88 Large per case, i.e. $34.99 / $44.99
+  each); volume pricing for fleets
 - Approved proof line (hero): "Tested in multiple hospitals during daily operations.
   Reviewed for compliance by hospital Infection Control leadership." Use only this
   exact wording; never name the hospitals or escalate the claim. The client asked
