@@ -8,11 +8,14 @@ const ease = [0.32, 0.72, 0, 1] as const;
 type TiltShieldSize = "medium" | "large";
 
 // Single-cover prices drive every comparison figure; case pricing is shown
-// separately and never used in the savings math.
+// separately and never used in the savings math. caseTotal = casePrice × 12.
 const PRICING = {
-  medium: { label: "Standard", price: 29.99, casePrice: 24.99 },
-  large: { label: "Large", price: 49.99, casePrice: 44.99 },
-} satisfies Record<TiltShieldSize, { label: string; price: number; casePrice: number }>;
+  medium: { label: "Standard", price: 39.99, casePrice: 34.99, caseTotal: 419.88 },
+  large: { label: "Large", price: 49.99, casePrice: 44.99, caseTotal: 539.88 },
+} satisfies Record<
+  TiltShieldSize,
+  { label: string; price: number; casePrice: number; caseTotal: number }
+>;
 
 const RIGID_LID_LOW = 199;
 const RIGID_LID_HIGH = 299;
@@ -65,12 +68,12 @@ export function CostAdvantage() {
     large: null,
   });
 
-  const { price, casePrice } = PRICING[size];
+  const { price, casePrice, caseTotal } = PRICING[size];
   const savingsLow = RIGID_LID_LOW - price;
   const savingsHigh = RIGID_LID_HIGH - price;
   const reduction = (1 - price / RIGID_LID_HIGH) * 100;
   // Complete covers each budget can actually buy — never round up
-  // (at $29.99, $199 buys 6 covers; a 7th would cost $209.93).
+  // (at $39.99, $199 buys 4 covers; a 5th would cost $199.95).
   const trucksLow = Math.floor(RIGID_LID_LOW / price);
   const trucksHigh = Math.floor(RIGID_LID_HIGH / price);
   const barPct = (price / RIGID_LID_HIGH) * 100;
@@ -104,7 +107,7 @@ export function CostAdvantage() {
             <span className="text-cyan">Not the cost.</span>
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-slateSoft">
-            Start with a single cover: $29.99 Standard / $49.99 Large, or save
+            Start with a single cover: $39.99 Standard / $49.99 Large, or save
             $5 per unit with a case of 12. Volume pricing available for fleets.
           </p>
           <Button asChild size="lg" className="mt-8">
@@ -201,7 +204,10 @@ export function CostAdvantage() {
                     swapKey={size}
                     className="inline-block font-display text-lg font-semibold tracking-tight text-compliance/85"
                   >
-                    {usd.format(casePrice)} per cover
+                    {usd.format(caseTotal)}
+                    <span className="ml-2 text-[15px] font-medium text-coolGray/70">
+                      {usd.format(casePrice)} each
+                    </span>
                   </SwapValue>
                 </div>
               </div>
