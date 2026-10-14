@@ -45,7 +45,7 @@ export function BeforeAfter() {
             {/* Without */}
             <div className="relative border-b border-graphite bg-panel/80 p-8 md:border-b-0 md:border-r md:p-10">
               <div aria-hidden="true" className="hazard-divider hazard-divider--red absolute inset-x-0 top-0" />
-              <p className="spec-label text-warning">Without TiltShield</p>
+              <h3 className="font-display text-xl font-semibold tracking-tight text-warning">Without TiltShield</h3>
               <ul className="mt-7 space-y-4">
                 {WITHOUT.map(({ label, Icon }) => (
                   <li key={label} className="flex items-center gap-3 text-[16px] text-coolGray/70">
@@ -58,7 +58,7 @@ export function BeforeAfter() {
             {/* With */}
             <div className="relative bg-shield/[0.18] p-8 md:p-10">
               <div aria-hidden="true" className="hazard-divider absolute inset-x-0 top-0" />
-              <p className="spec-label text-cyan">With TiltShield</p>
+              <h3 className="font-display text-xl font-semibold tracking-tight text-cyan">With TiltShield</h3>
               <ul className="mt-7 space-y-4">
                 {WITH.map(({ label, Icon }) => (
                   <li key={label} className="flex items-center gap-3 text-[16px] font-medium text-white">

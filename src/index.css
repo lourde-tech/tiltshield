@@ -1,7 +1,5 @@
 @import "@fontsource-variable/archivo";
 @import "@fontsource-variable/instrument-sans";
-@import "@fontsource/ibm-plex-mono/400.css";
-@import "@fontsource/ibm-plex-mono/500.css";
 
 @tailwind base;
 @tailwind components;
@@ -80,11 +78,8 @@
       transparent 14px 28px
     );
   }
-  .spec-label {
-    @apply font-mono text-[11px] uppercase tracking-[0.18em];
-  }
   /* Primary-sans text roles for footer, form, and badges. Normal tracking,
-     sentence case — never the mono spec-label treatment in these areas. */
+     sentence case. */
   .footer-heading {
     @apply font-sans text-sm font-semibold leading-6 tracking-normal;
   }

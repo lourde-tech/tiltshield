@@ -100,7 +100,7 @@ export function CostAdvantage() {
       <div className="container grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-20">
         {/* Left: pitch */}
         <FadeUp>
-          <p className="spec-label text-cyan">Cost advantage</p>
+          <p className="font-display text-lg font-semibold tracking-tight text-cyan">Cost advantage</p>
           <h2 className="display-lg mt-5 text-white">
             Cover the truck.
             <br />

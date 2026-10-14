@@ -39,7 +39,7 @@ export function LegalLayout({ title, metaDescription, heading, effectiveDate, ch
         <section className="bg-navy pb-14 pt-32 md:pb-16 md:pt-40">
           <div className="container">
             <div className="mx-auto max-w-3xl">
-              <p className="spec-label text-cyan">Legal</p>
+              <p className="font-display text-lg font-semibold tracking-tight text-cyan">Legal</p>
               <h1 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white md:text-5xl">
                 {heading}
               </h1>
