@@ -91,6 +91,7 @@ legally safe framing per the partner slider pack's compliance notes:
 - Contact: (800) 765-9008 · info@tiltshieldusa.com · www.tiltshieldusa.com
 - Legal entity: "Renewed 22 LLC DBA TiltShield" (footer copyright, legal pages,
   contact block). Never shorten to "TiltShield LLC"
+- Mailing address: 2091 J A Cochran Bypass, Chester, SC 29706 (legal contact block)
 - Fit claim: 1–2.5 yard tilt trucks
 - Sizes: two — Standard (72.25 × 33.5 × 43.75 in) and Large (80.5 × 43 × 49.5 in);
   each color is available in both sizes. Never call the smaller size "Medium"
