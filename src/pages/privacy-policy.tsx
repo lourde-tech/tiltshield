@@ -20,7 +20,7 @@ export function PrivacyPolicyPage() {
           choose to share with us.
         </LegalP>
         <LegalP>
-          This Privacy Policy explains how TiltShield LLC (“TiltShield,” “we,” “us,” or “our”)
+          This Privacy Policy explains how Renewed 22 LLC DBA TiltShield (“TiltShield,” “we,” “us,” or “our”)
           collects, uses, stores, and shares information through our website, located at{" "}
           <a href="https://www.tiltshieldusa.com" className="text-clinical underline-offset-2 hover:underline">
             https://www.tiltshieldusa.com

@@ -95,7 +95,7 @@ export function LegalContactBlock() {
   return (
     <div className="mt-5 rounded-xl border border-lightBorder bg-mist px-5 py-5 text-[15px] leading-7 text-slateText">
       <p className="font-semibold text-navy">TiltShield</p>
-      <p>TiltShield LLC</p>
+      <p>Renewed 22 LLC DBA TiltShield</p>
       <p>291 J A Cochran Bypass, Chester, SC 29706</p>
       <p>
         <strong className="font-semibold text-navy">Website:</strong>{" "}

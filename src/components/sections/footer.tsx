@@ -77,7 +77,7 @@ export function Footer() {
 
       <div className="border-t border-graphite/70">
         <div className="container flex flex-col items-center justify-between gap-3 py-6 sm:flex-row">
-          <p className="footer-legal">© 2026 TiltShield. All rights reserved.</p>
+          <p className="footer-legal">© 2026 Renewed 22 LLC DBA TiltShield. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy-policy" className="footer-legal transition-colors hover:text-cyan">Privacy Policy</a>
             <a href="/terms-of-use" className="footer-legal transition-colors hover:text-cyan">Terms of Use</a>

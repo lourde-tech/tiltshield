@@ -20,7 +20,7 @@ export function TermsOfUsePage() {
           <a href="https://www.tiltshieldusa.com" className="text-clinical underline-offset-2 hover:underline">
             https://www.tiltshieldusa.com
           </a>
-          , operated by TiltShield LLC (“TiltShield,” “we,” “us,” or “our”).
+          , operated by Renewed 22 LLC DBA TiltShield (“TiltShield,” “we,” “us,” or “our”).
         </LegalP>
         <LegalP>
           By accessing or using the website, you agree to these Terms of Use. If you do not agree
